@@ -1,4 +1,4 @@
-# API Gateway - Geo Location Dashboard
+# GraphQL - AWS Serverlss
 
 ### Project Overview
 This project is a GraphQL API demo running on top of an AWS Serverless architecture, deployed using CDK.
