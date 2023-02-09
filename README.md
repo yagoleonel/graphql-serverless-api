@@ -7,23 +7,38 @@ The API is supposed to manipulate Netflix TV Shows stored in a DynamoDB (databas
 
 ![AWS Arch Design](./assets/architecture.png)
 ##
-GraphQL client view:
 
-![GraphQL Dashboard](./assets/graphql-dashboard.png)
-##
 The GraphQL server is bootstraped within an Lambda function using an Apollo Server integration lib, designed for this very purpose.
 
-![AWS Arch Design](./assets/server.png)
+````javascript
+    import { ApolloServer } from '@apollo/server';
+    import { startServerAndCreateLambdaHandler, handlers } from '@as-integrations/aws-lambda';
+    import schema from './graphql-schema-definition';
+
+
+    const Server = new ApolloServer({
+    schema,
+    });
+
+    export const handler = startServerAndCreateLambdaHandler(
+    Server,
+        handlers.createAPIGatewayProxyEventRequestHandler()
+    );
+```
 
 #####
 ##
 ##### __GraphQL Queries and Mutations Available__
+
 __query__:
 * tvshow (id) => Returns one entity
 * tvshows => Returns all TV Shows as a collections
 
 __mutations__: 
 * udpateDescription(id, description) => Updates a TV Show entity description
+
+![GraphQL Dashboard](./assets/graphql-dashboard.png)
+####
 ##
 ##### __Data Structure__
   Data is structured in DynamoDB (database) as follows:
