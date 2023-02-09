@@ -24,7 +24,7 @@ The GraphQL server is bootstraped within an Lambda function using an Apollo Serv
     Server,
         handlers.createAPIGatewayProxyEventRequestHandler()
     );
-```
+````
 
 #####
 ##
