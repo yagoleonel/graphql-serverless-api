@@ -1,4 +1,4 @@
-# GraphQL - AWS Serverlss
+# GraphQL - AWS Serverless
 
 ### Project Overview
 This project is a GraphQL API demo running on top of an AWS Serverless architecture, deployed using CDK.
