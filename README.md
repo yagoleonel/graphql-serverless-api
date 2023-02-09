@@ -6,9 +6,13 @@ This API is supposed to query Netflix TV Shows from a database.
 
 ![AWS Arch Design](./assets/architecture.png)
 
+A GraphQL Apollo Server is bootstraped within an Lambda function using a an Apollo integration lib, designed for this puorpose.
+
+![AWS Arch Design](./assets/server.png)
+
 GraphQL client view:
 
-![CW Dashboard](./assets/graphql-dashboard.png)
+![GraphQL Dashboard](./assets/graphql-dashboard.png)
 
 ##### ___Schema___
 __query__:
