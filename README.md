@@ -6,29 +6,26 @@ This project is a GraphQL API demo running on top of an AWS Serverless architect
 The API is supposed to manipulate Netflix TV Shows stored in a DynamoDB (database) table.
 
 ![AWS Arch Design](./assets/architecture.png)
-
+##
 GraphQL client view:
 
 ![GraphQL Dashboard](./assets/graphql-dashboard.png)
-
+##
 The GraphQL server is bootstraped within an Lambda function using an Apollo Server integration lib, designed for this very purpose.
 
 ![AWS Arch Design](./assets/server.png)
 
 #####
-
-##### ___Schema___
-
-###### __GraphQL__
-
+##
+##### __GraphQL Queries and Mutations Available__
 __query__:
 * tvshow (id) => Returns one entity
 * tvshows => Returns all TV Shows as a collections
 
 __mutations__: 
 * udpateDescription(id, description) => Updates a TV Show entity description
-
-###### __Database__
+##
+##### __Data Structure__
   Data is structured in DynamoDB (database) as follows:
   ``` json
   {
@@ -46,7 +43,7 @@ __mutations__:
     "description": "As her father nears the end of his life, filmmaker Kirsten Johnson stages his death in inventive and comical ways to help them both face the inevitable."
   }
   ```
-
+##
 ### Technologies implemented:
 - [GraphQL] - Api Design (https://graphql.org/learn/)
 - [Apollo] - GraphQL Framework (https://www.apollographql.com/)
@@ -56,6 +53,7 @@ __mutations__:
 - [Lambda] - FAAS (Function as a service).
 - [DynamoDB] - Entities storage
 
+##
 ## _Commands to deploy_
 
 * `npm run package`                         compile typescript to js
