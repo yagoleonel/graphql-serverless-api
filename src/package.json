@@ -1,0 +1,17 @@
+{
+  "name": "src",
+  "author": "Yago Leonel <yagoleonelper@gmail.com>",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.110"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.3.3",
+    "@as-integrations/aws-lambda": "^2.0.0",
+    "aws-sdk": "^2.1310.0",
+    "graphql": "^16.6.0"
+  }
+}

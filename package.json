@@ -1,0 +1,30 @@
+{
+  "name": "graphql-serverless-api",
+  "author": "Yago Leonel <yagoleonelper@gmail.com>",
+  "version": "0.1.0",
+  "bin": {
+    "graphql-serverless-api": "bin/graphql-serverless-api.js"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "build": "npm run compile && cp -R node_modules/ .dist && cp -R ./src/node_modules .dist/src",
+    "test": "jest",
+    "install:all": "npm install && npm run install:src",
+    "install:src": "npm install --prefix ./src",
+    "package": "npm run install:all && npm run build"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.2.5",
+    "@types/node": "18.11.18",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.3",
+    "aws-cdk": "2.60.0",
+    "ts-node": "^10.9.1",
+    "typescript": "~4.9.4"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.60.0",
+    "constructs": "^10.0.0",
+    "source-map-support": "^0.5.21"
+  }
+}
