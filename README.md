@@ -7,14 +7,15 @@ The API is supposed to manipulate Netflix TV Shows stored in a DynamoDB (databas
 
 ![AWS Arch Design](./assets/architecture.png)
 
-A GraphQL Apollo Server is bootstraped within an Lambda function using a an Apollo integration lib, designed for this puorpose.
-
-![AWS Arch Design](./assets/server.png)
-
 GraphQL client view:
 
 ![GraphQL Dashboard](./assets/graphql-dashboard.png)
 
+The GraphQL server is bootstraped within an Lambda function using an Apollo Server integration lib, designed for this very purpose.
+
+![AWS Arch Design](./assets/server.png)
+
+#####
 
 ##### ___Schema___
 
