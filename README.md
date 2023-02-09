@@ -2,7 +2,8 @@
 
 ### Project Overview
 This project is a GraphQL API demo running on top of an AWS Serverless architecture, deployed using CDK.
-This API is supposed to query Netflix TV Shows from a database.
+##
+The API is supposed to query Netflix TV Shows from a database.
 
 ![AWS Arch Design](./assets/architecture.png)
 
